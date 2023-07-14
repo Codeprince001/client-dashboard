@@ -4,7 +4,8 @@ import Header from './Components/Header';
 import { theme } from "./theme";
 import { VerticalSidebar } from './pages/global/Sidebar';
 import { Route, Routes } from 'react-router-dom';
-import { Dashboard } from './pages/Dashboard/index';
+import { Dashboard } from './pages/Dashboard/dashboard';
+import { dashboardAdminHeader } from './pages/Dashboard/dashboardAdminHeader';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <VerticalSidebar />
         <main className='content'>
           <Header />
+          <dashboardAdminHeader />
           <Routes>
             <Route path="/" element={<Dashboard />} />
             {/* <Route path="/team" element={<Team />} /> */}
