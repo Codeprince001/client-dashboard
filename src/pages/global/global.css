@@ -57,6 +57,10 @@ aside.sidebar {
   border-bottom: none;
 }
 
+.sidebar-menuItem:first-child {
+  margin-top: 10px;
+}
+
 
 .description {
   display: flex;

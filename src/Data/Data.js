@@ -124,6 +124,33 @@ export const SidebarData =
   ];
 
 
-export const dataOverview = {
-
+export const BarChartData = {
+  title: "Earnings",
+  dataKey: "earnings",
+  chartData: [
+    {
+      name: 'Page A',
+      uv: 600000,
+      pv: 2400,
+      amt: 2400,
+      date: "1 may"
+    },
+    {
+      name: 'Page B',
+      uv: 400000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: 'Page C',
+      uv: 200000,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: 'Page D',
+      uv: 100000,
+      pv: 3908,
+      amt: 2000,
+    }]
 };

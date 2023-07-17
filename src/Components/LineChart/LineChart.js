@@ -1,5 +1,6 @@
-import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import "./linechart.css";
+import { useTheme } from '@mui/material';
 
 const data = [
   {
@@ -25,37 +26,29 @@ const data = [
     uv: 2780,
     pv: 3908,
     amt: 2000,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
+  }
 ];
 
-export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/tiny-line-chart-r5z0f';
+export const LineChartBox = () => {
+  const theme = useTheme();
 
-  render() {
-    return (
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart width={300} height={100} data={data}>
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
-        </LineChart>
-      </ResponsiveContainer>
-    );
-  }
-}
+  return (
+    <div className="lineChartBox">
+      <div className='title' >
+        <h5>TIme Log</h5>
+      </div>
+      <div className='chart'>
+        <ResponsiveContainer width="99%" height="100%">
+          <LineChart data={data}>
+            <Tooltip
+              contentStyle={{ background: theme.palette.custom.darkBlue, fontSize: "12px", border: "none", borderRadius: "10px" }}
+            />
+            <XAxis axisLine={false} padding={{ right: 10 }} />
+            <YAxis axisLine={false} />
+            <Line dataKey="pv" stroke={theme.palette.custom.blue} strokeWidth={2} fill={theme.palette.custom.blue} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    </div >);
+
+};

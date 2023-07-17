@@ -8,7 +8,8 @@ import { FaFileLines } from "react-icons/fa6";
 import StatBox from "../../Components/StatBox/StatBox";
 import DashboardTab from "./dashboardAdminHeader";
 import BarChartBox from "../../Components/BarChart/BarChartBox";
-
+import { BarChartData } from "../../Data/Data";
+import { LineChartBox } from "../../Components/LineChart/LineChart";
 
 export const Dashboard = () => {
   const theme = useTheme();
@@ -194,7 +195,7 @@ export const Dashboard = () => {
             justifyContent="center"
             borderRadius="10px"
           >
-            {<BarChartBox />}
+            {<BarChartBox {...BarChartData} />}
 
           </Box>
           <Box
@@ -205,7 +206,7 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          >
+          ><LineChartBox />
           </Box>
 
           {/* Row 4 */}
