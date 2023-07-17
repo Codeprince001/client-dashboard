@@ -7,12 +7,13 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
+
 const Header = () => {
   const theme = useTheme();
   // const colors = tokens(theme.palette.mode);
 
   return (
-    <Box mb="10px" bgcolor={theme.palette.custom.darkBlue} p="1.2rem" display="flex">
+    <Box bgcolor={theme.palette.custom.darkBlue} p="1.2rem" display="flex" top="0" width="100%">
       <Typography fontSize="32px" color={theme.palette.custom.white} fontWeight="500" mr="1rem">Dashboard</Typography>
       <Box display="flex" alignItems="center" justifyContent="space-between" flex="1">
         <Box display="flex" columnGap=".2rem" alignItems="center">
@@ -32,6 +33,7 @@ const Header = () => {
 
       </Box>
     </Box >
+
   );
 };
 

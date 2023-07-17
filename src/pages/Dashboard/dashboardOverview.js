@@ -5,17 +5,21 @@ import { BiSolidTimeFive } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 
 import { FaFileLines } from "react-icons/fa6";
-import StatBox from "../../Components/StatBox";
-import dashboardAdminHeader from "./dashboardAdminHeader";
+import StatBox from "../../Components/StatBox/StatBox";
+import DashboardTab from "./dashboardAdminHeader";
+import BarChartBox from "../../Components/BarChart/BarChartBox";
 
 
 export const Dashboard = () => {
   const theme = useTheme();
 
   return (
-    <>
-      <dashboardAdminHeader />
-      <Box m="20px">
+    <div>
+
+      <DashboardTab />
+      <Box p="20px" style={{
+        maxHeight: "calc(100vh - 136.39px)", overflowY: "auto", flex: 1
+      }}>
 
         {/* GRID & CHARTS */}
         <Box
@@ -56,8 +60,8 @@ export const Dashboard = () => {
 
           >
             <StatBox
-              title="Total Clients"
-              numbers="31"
+              title="Total Employees"
+              numbers="32"
               icon={
                 <FaUser
                   sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
@@ -75,8 +79,8 @@ export const Dashboard = () => {
 
           >
             <StatBox
-              title="Total Clients"
-              numbers="31"
+              title="Total Projects"
+              numbers="20"
               icon={
                 <FaLayerGroup
                   sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
@@ -93,8 +97,8 @@ export const Dashboard = () => {
             borderRadius="10px"
           >
             <StatBox
-              title="Total Clients"
-              numbers="31"
+              title="Due Invoices"
+              numbers="55"
               icon={
                 <FaFileLines
                   sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
@@ -180,23 +184,99 @@ export const Dashboard = () => {
               }
             />
           </Box>
+          {/* Row 3 */}
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          >
+            {<BarChartBox />}
+
+          </Box>
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          >
+          </Box>
+
+          {/* Row 4 */}
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          >
+          </Box>
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          >
+          </Box>
+
+          {/* Row 5 */}
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          ><StatBox title="Earnings" />
+          </Box>
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          ><StatBox title="Time Logs" />
+          </Box>
+
+          {/* Row 5 */}
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          ><StatBox title="Earnings" />
+          </Box>
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          ><StatBox title="Time Logs" />
+          </Box>
         </Box>
 
-        {/* Row 3 */}
-        <Box
-          gridColumn="span 6"
-          backgroundColor={theme.palette.custom.white}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          borderRadius="10px"
-
-
-        >
-
-        </Box>
       </Box>
-    </>
+    </div>
 
   );
 };
