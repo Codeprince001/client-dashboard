@@ -15,7 +15,7 @@ export const SidebarData =
   [
     {
       id: 1,
-      title: "DashBoard",
+      title: "Dashboard",
       url: "/",
       icon: <FiHome />,
       subicon: <BiChevronRight />

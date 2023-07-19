@@ -6,15 +6,15 @@ import { SidebarData } from "../../Data/Data";
 
 export const VerticalSidebar = () => {
   const theme = useTheme();
-  const [selected, setSelected] = useState("Dashboard");
+  const [activeLink, setactiveLink] = useState("Dashboard");
 
   return (
     <aside className="sidebar" >
       <ul className="sidebar-menu ">
         {SidebarData.map((data) => {
           return (
-            <li key={data.title} onClick={() => setSelected(data.title)} className={selected === data.title ? "sidebar-menuItem active" : "sidebar-menuItem"}  >
-              <Link to={data.url} >
+            <li key={data.title} className={activeLink === data.title ? "sidebar-menuItem active" : "sidebar-menuItem"}  >
+              <Link to={data.url} onClick={() => setactiveLink(data.title)}>
                 <div className="icon">
                   {data.icon}
                 </div>
