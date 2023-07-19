@@ -134,25 +134,28 @@ export const BarChartData = {
       uv: 600000,
       pv: 2400,
       amt: 2400,
-      date: "1 may"
+      xdata: "01-May-22"
     },
     {
       name: 'Page B',
       uv: 400000,
       pv: 1398,
       amt: 2210,
+      xdata: "02-May-22"
     },
     {
       name: 'Page C',
       uv: 200000,
       pv: 9800,
       amt: 2290,
+      xdata: "03-May-22"
     },
     {
       name: 'Page D',
       uv: 100000,
       pv: 3908,
       amt: 2000,
+      xdata: "04-May-22"
     }]
 };
 

@@ -228,7 +228,7 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          ><Box sx={{ background: "red" }}></Box>
+          ><TicketBox />
           </Box>
 
           {/* Row 5 */}

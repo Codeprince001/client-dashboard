@@ -12,6 +12,7 @@
   padding-bottom: .5rem
 }
 
-.chart {
+.linechart {
   height: 100%;
+  padding: 1rem;
 }

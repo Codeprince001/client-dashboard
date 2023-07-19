@@ -29,23 +29,39 @@ const data = [
   }
 ];
 
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload; // Extract the data for the tooltip
+
+    return (
+      <div className="custom-tooltip">
+        <p className="label">{`${data.name}: ${data.uv}`}</p>
+      </div>
+    );
+  }
+
+  return null;
+};
+
 export const LineChartBox = () => {
   const theme = useTheme();
 
   return (
     <div className="lineChartBox">
       <div className='title' >
-        <h5>TIme Log</h5>
+        <h5>Time Log</h5>
       </div>
-      <div className='chart'>
+      <div className='linechart'>
         <ResponsiveContainer width="99%" height="100%">
           <LineChart data={data}>
             <Tooltip
+              cursor={false}
+              content={<CustomTooltip />}
               name={data.name}
               contentStyle={{ background: theme.palette.custom.darkBlue, fontSize: "12px", border: "none", borderRadius: "10px" }}
             />
-            <XAxis axisLine={false} padding={{ right: 10 }} />
-            <YAxis axisLine={false} />
+            <XAxis axisLine={false} padding={{ right: 10 }} tickMargin={10} tickLine={false} />
+            <YAxis axisLine={false} tickMargin={10} />
             <Line dataKey="pv" stroke={theme.palette.custom.blue} strokeWidth={2} fill={theme.palette.custom.blue} />
           </LineChart>
         </ResponsiveContainer>
