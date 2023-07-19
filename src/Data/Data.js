@@ -7,6 +7,7 @@ import { PiBriefcaseBold } from "react-icons/pi";
 import { CgShoppingCart } from "react-icons/cg";
 import { IoHeadset } from "react-icons/io5";
 import { LuCalendarDays } from "react-icons/lu";
+import userImg from "../Assets/img/user.jpg";
 
 
 
@@ -154,3 +155,78 @@ export const BarChartData = {
       amt: 2000,
     }]
 };
+
+
+export const DashboardMenuData = () => {
+  return (
+    [
+      {
+        link: "overview",
+        url: "/",
+      },
+      {
+        link: "project",
+        url: "/dashboard/project",
+      },
+      {
+        link: "overview",
+        url: "/dashboard/client",
+      },
+      {
+        link: "overview",
+        url: "/dashboard/hr",
+      },
+      {
+        link: "overview",
+        url: "/dashboard/ticket",
+      },
+      {
+        link: "overview",
+        url: "/dashboard/finance",
+      },
+    ]
+  );
+};
+
+export const TicketHolders = [
+  {
+    id: 1,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 2,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 3,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 4,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 5,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  }
+];

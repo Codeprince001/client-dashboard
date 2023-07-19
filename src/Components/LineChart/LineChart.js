@@ -41,6 +41,7 @@ export const LineChartBox = () => {
         <ResponsiveContainer width="99%" height="100%">
           <LineChart data={data}>
             <Tooltip
+              name={data.name}
               contentStyle={{ background: theme.palette.custom.darkBlue, fontSize: "12px", border: "none", borderRadius: "10px" }}
             />
             <XAxis axisLine={false} padding={{ right: 10 }} />

@@ -6,33 +6,36 @@ import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import DashboardTab from "../pages/Dashboard/dashboardAdminHeader";
 
 
 const Header = () => {
   const theme = useTheme();
-  // const colors = tokens(theme.palette.mode);
 
   return (
-    <Box bgcolor={theme.palette.custom.darkBlue} p="1.2rem" display="flex" top="0" width="100%">
-      <Typography fontSize="32px" color={theme.palette.custom.white} fontWeight="500" mr="1rem">Dashboard</Typography>
-      <Box display="flex" alignItems="center" justifyContent="space-between" flex="1">
-        <Box display="flex" columnGap=".2rem" alignItems="center">
-          <Typography fontSize="12px" color={theme.palette.custom.grey} fontWeight="500" >Home</Typography>
-          <FiberManualRecordIcon style={{ fontSize: '0.5rem', color: `${theme.palette.custom.grey}` }} />
-          <Typography fontSize="12px" color={theme.palette.custom.grey} fontWeight="500" >Dashboard</Typography>
-        </Box>
+    <Box>
+      <Box bgcolor={theme.palette.custom.darkBlue} p="1.2rem" display="flex" top="0" width="100%">
+        <Typography fontSize="32px" color={theme.palette.custom.white} fontWeight="500" mr="1rem">Dashboard</Typography>
+        <Box display="flex" alignItems="center" justifyContent="space-between" flex="1">
+          <Box display="flex" columnGap=".2rem" alignItems="center">
+            <Typography fontSize="12px" color={theme.palette.custom.grey} fontWeight="500" >Home</Typography>
+            <FiberManualRecordIcon style={{ fontSize: '0.5rem', color: `${theme.palette.custom.grey}` }} />
+            <Typography fontSize="12px" color={theme.palette.custom.grey} fontWeight="500" >Dashboard</Typography>
+          </Box>
 
-        <Box display="flex" justifyContent="space-between" alignItems="center" gap="5px" color={theme.palette.custom.grey} columnGap="1rem">
-          <SearchIcon />
-          <DescriptionIcon />
-          <AccessTimeFilledIcon />
-          <AddBoxIcon />
-          <NotificationsIcon />
-          <PowerSettingsNewIcon />
-        </Box>
+          <Box display="flex" justifyContent="space-between" alignItems="center" gap="5px" color={theme.palette.custom.grey} columnGap="1rem">
+            <SearchIcon />
+            <DescriptionIcon />
+            <AccessTimeFilledIcon />
+            <AddBoxIcon />
+            <NotificationsIcon />
+            <PowerSettingsNewIcon />
+          </Box>
 
-      </Box>
-    </Box >
+        </Box>
+      </Box >
+    </Box>
+
 
   );
 };

@@ -10,16 +10,16 @@ import DashboardTab from "./dashboardAdminHeader";
 import BarChartBox from "../../Components/BarChart/BarChartBox";
 import { BarChartData } from "../../Data/Data";
 import { LineChartBox } from "../../Components/LineChart/LineChart";
+import TicketBox from "../../Components/Ticket/TicketBox";
 
 export const Dashboard = () => {
   const theme = useTheme();
 
   return (
     <div>
-
       <DashboardTab />
       <Box p="20px" style={{
-        maxHeight: "calc(100vh - 136.39px)", overflowY: "auto", flex: 1
+        maxHeight: "calc(100vh - 136.39px)", overflowY: "auto", flex: 1, zIndex: -999
       }}>
 
         {/* GRID & CHARTS */}
@@ -228,7 +228,7 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          >
+          ><Box sx={{ background: "red" }}></Box>
           </Box>
 
           {/* Row 5 */}

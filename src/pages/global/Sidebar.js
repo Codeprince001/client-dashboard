@@ -1,20 +1,19 @@
 import { useState } from "react";
-import { Box, getInitColorSchemeScript, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./global.css";
-
 import { SidebarData } from "../../Data/Data";
 
 export const VerticalSidebar = () => {
   const theme = useTheme();
-  // const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("Dashboard");
 
   return (
     <aside className="sidebar" >
-      <ul className="sidebar-menu">
+      <ul className="sidebar-menu ">
         {SidebarData.map((data) => {
           return (
-            <li className="sidebar-menuItem">
+            <li key={data.title} onClick={() => setSelected(data.title)} className={selected === data.title ? "sidebar-menuItem active" : "sidebar-menuItem"}  >
               <Link to={data.url} >
                 <div className="icon">
                   {data.icon}
