@@ -7,6 +7,13 @@ import { PiBriefcaseBold } from "react-icons/pi";
 import { CgShoppingCart } from "react-icons/cg";
 import { IoHeadset } from "react-icons/io5";
 import { LuCalendarDays } from "react-icons/lu";
+import { MdOutlineMessage } from "react-icons/md";
+import { FiVideo } from "react-icons/fi";
+import { FiSettings } from "react-icons/fi";
+import { LuWallet } from "react-icons/lu";
+import { BiFolder } from "react-icons/bi";
+import { TbNotes } from "react-icons/tb";
+import { AiOutlinePieChart } from "react-icons/ai";
 import userImg from "../Assets/img/user.jpg";
 
 
@@ -78,7 +85,7 @@ export const SidebarData =
       id: 1,
       title: "Messages",
       url: "/messages",
-      icon: <BsClipboard2 />
+      icon: <MdOutlineMessage />
     },
     {
       id: 1,
@@ -90,37 +97,37 @@ export const SidebarData =
       id: 1,
       title: "Knowledge Base",
       url: "/knowledgebase",
-      icon: <GoHomeFill />
+      icon: <TbNotes />
     },
     {
       id: 1,
       title: "Assets",
       url: "/assets",
-      icon: <GoHomeFill />
+      icon: <BiFolder />
     },
     {
       id: 1,
       title: "Payroll",
       url: "/payroll",
-      icon: <GoHomeFill />
+      icon: <LuWallet />
     },
     {
       id: 1,
       title: "Zoom",
       url: "/zoom",
-      icon: <GoHomeFill />
+      icon: <FiVideo />
     },
     {
       id: 1,
       title: "Reports",
       url: "/reports",
-      icon: <GoHomeFill />
+      icon: <AiOutlinePieChart />
     },
     {
       id: 1,
       title: "Settings",
       url: "/settings",
-      icon: <GoHomeFill />
+      icon: <FiSettings />
     }
   ];
 
