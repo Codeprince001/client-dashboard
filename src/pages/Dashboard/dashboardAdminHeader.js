@@ -2,7 +2,6 @@ import "./dashboard.css";
 import { RiSettings3Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { DashboardMenuData } from "../../Data/Data";
 
 const DashboardTab = () => {
   const [selected, setSelected] = useState("Overview");
@@ -35,7 +34,7 @@ const DashboardTab = () => {
   }, [selected]);
 
   return (
-    <section className="dashboard-header">
+    <div className="dashboard-header">
       <div className="nav">
         <div
           className={`sub-nav ${selected === "Overview" ? "active" : ""}`}
@@ -77,7 +76,8 @@ const DashboardTab = () => {
       <div className="setting-icon">
         <RiSettings3Fill />
       </div>
-    </section>
+    </div>
+
   );
 };
 

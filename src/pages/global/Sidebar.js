@@ -22,7 +22,8 @@ export const VerticalSidebar = () => {
                   <div className="title" style={{ fontSize: "12px", fontWeight: "bold" }}>{data.title}</div>
                   <div className="icon">{data.subicon && data.subicon}</div>
                 </div>
-              </Link></li>
+              </Link>
+            </li>
           );
         }
         )}

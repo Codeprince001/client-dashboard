@@ -47,7 +47,7 @@ aside.sidebar {
 }
 
 .sidebar-menuItem {
-  padding: .5rem;
+  padding-top: 1rem;
   border-bottom: 1px solid var(--grey);
 }
 
@@ -60,7 +60,6 @@ aside.sidebar {
   margin-top: 7px;
 }
 
-
 .description {
   display: flex;
   justify-content: center;
@@ -68,4 +67,8 @@ aside.sidebar {
 
 .sidebar-menuItem.active {
   border-left: 4px solid var(--blue);
+}
+
+.sidebar-menuItem.active a {
+  color: #fff;
 }

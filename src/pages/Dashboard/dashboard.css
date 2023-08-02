@@ -21,7 +21,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  position: absolute;
   flex: 1;
+  z-index: 99999999;
+  box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.59);
+  width: calc(100% - 120px);
+
 }
 
 .nav {
@@ -48,8 +53,4 @@
 
 .setting-icon {
   padding-right: 1.1rem;
-}
-
-.dashboard-header {
-  box-shadow: 0px 4px 5px 0px rgba(145, 141, 141, 0.59)
 }

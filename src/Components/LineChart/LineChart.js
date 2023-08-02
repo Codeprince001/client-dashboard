@@ -2,49 +2,26 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import "./linechart.css";
 import { useTheme } from '@mui/material';
 
-const data = [
-  {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  }
-];
 
-const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    const data = payload[0].payload; // Extract the data for the tooltip
 
-    return (
-      <div className="custom-tooltip">
-        <p className="label">{`${data.name}: ${data.uv}`}</p>
-      </div>
-    );
-  }
-
-  return null;
-};
-
-export const LineChartBox = () => {
+export const LineChartBox = (props) => {
   const theme = useTheme();
+
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      const data = payload[0].payload;
+
+      return (
+        <div style={{ backgroundColor: theme.palette.custom.darkBlue, display: "flex", flexDirection: "column", borderRadius: "10px", padding: ".2rem", fontSize: "12px" }}>
+          <p style={{ margin: "5px", color: theme.palette.custom.grey, borderBottom: `2px solid ${theme.palette.custom.blue}` }}>{`${label}`}</p>
+          <p style={{ color: theme.palette.custom.white, margin: "5px", textAlign: "center" }}>{data.uv}</p>
+          <p style={{ color: theme.palette.custom.grey, textAlign: "center" }}>Hours Logged</p>
+        </div >
+      );
+    }
+
+    return null;
+  };
 
   return (
     <div className="lineChartBox">
@@ -52,17 +29,16 @@ export const LineChartBox = () => {
         <h5>Time Log</h5>
       </div>
       <div className='linechart'>
-        <ResponsiveContainer width="99%" height="100%">
-          <LineChart data={data}>
+        <ResponsiveContainer width="90%" height="100%">
+          <LineChart data={props.chartData} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
             <Tooltip
               cursor={false}
               content={<CustomTooltip />}
-              name={data.name}
               contentStyle={{ background: theme.palette.custom.darkBlue, fontSize: "12px", border: "none", borderRadius: "10px" }}
             />
-            <XAxis axisLine={false} padding={{ right: 10 }} tickMargin={10} tickLine={false} />
-            <YAxis axisLine={false} tickMargin={10} />
-            <Line dataKey="pv" stroke={theme.palette.custom.blue} strokeWidth={2} fill={theme.palette.custom.blue} />
+            <XAxis axisLine={false} padding={{ left: 60, right: 60 }} tickMargin={10} tickLine={false} dataKey="xData" fontSize="12px" />
+            <YAxis axisLine={false} padding={{ left: 20 }} tickMargin={20} dataKey="yData" />
+            <Line dataKey="uv" stroke={theme.palette.custom.blue} strokeWidth={2} fill={theme.palette.custom.blue} />
           </LineChart>
         </ResponsiveContainer>
       </div>

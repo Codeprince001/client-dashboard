@@ -1,5 +1,4 @@
 import { FiHome } from "react-icons/fi";
-import { GoHomeFill } from "react-icons/go";
 import { BiChevronRight, BiDollar } from "react-icons/bi";
 import { BsPerson, BsGrid, BsClipboard2 } from "react-icons/bs";
 import { HiMiniBuildingOffice, HiOutlineUsers } from "react-icons/hi2";
@@ -43,7 +42,8 @@ export const SidebarData =
       id: 1,
       title: "HR",
       url: "/hr",
-      icon: <HiOutlineUsers />
+      icon: <HiOutlineUsers />,
+      subicon: <BiChevronRight />
     },
     {
       id: 1,
@@ -137,32 +137,59 @@ export const BarChartData = {
   dataKey: "earnings",
   chartData: [
     {
-      name: 'Page A',
-      uv: 600000,
+      name: 'Days',
+      yData: 307900,
       pv: 2400,
       amt: 2400,
-      xdata: "01-May-22"
+      xData: "01-May-22"
     },
     {
-      name: 'Page B',
-      uv: 400000,
+      name: 'Days',
+      yData: 408600,
       pv: 1398,
       amt: 2210,
-      xdata: "02-May-22"
+      xData: "02-May-22"
     },
     {
-      name: 'Page C',
-      uv: 200000,
+      name: 'Days',
+      yData: 589000,
       pv: 9800,
       amt: 2290,
-      xdata: "03-May-22"
+      xData: "03-May-22"
     },
     {
-      name: 'Page D',
-      uv: 100000,
+      name: 'Days',
+      yData: 145700,
       pv: 3908,
       amt: 2000,
-      xdata: "04-May-22"
+      xData: "04-May-22"
+    }]
+};
+
+
+export const LineChartData = {
+  title: "Time Log",
+  dataKey: "Hours Logged",
+  chartData: [
+    {
+      yData: 40,
+      uv: 33,
+      xData: "01-May-22"
+    },
+    {
+      yData: 30,
+      uv: 15,
+      xData: "02-May-22"
+    },
+    {
+      yData: 20,
+      uv: 29,
+      xData: "03-May-22"
+    },
+    {
+      yData: 10,
+      uv: 11,
+      xData: "04-May-22"
     }]
 };
 
@@ -198,11 +225,13 @@ export const DashboardMenuData = () => {
   );
 };
 
+
+
 export const TicketHolders = [
   {
     id: 1,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    description: "Lorem gratin danie wjnajnd awdbwbf",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -210,7 +239,7 @@ export const TicketHolders = [
   {
     id: 2,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    description: "Lorem gratin danie wjnajnd awdbwbf",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -218,7 +247,7 @@ export const TicketHolders = [
   {
     id: 3,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -226,7 +255,7 @@ export const TicketHolders = [
   {
     id: 4,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -234,7 +263,7 @@ export const TicketHolders = [
   {
     id: 5,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf wwjhri wjwiwf oowwefn cakfa",
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
