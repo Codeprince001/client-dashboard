@@ -9,6 +9,7 @@ import StatBox from "../../Components/StatBox/StatBox";
 import DashboardTab from "./dashboardAdminHeader";
 import BarChartBox from "../../Components/BarChart/BarChartBox";
 import { BarChartData } from "../../Data/Data";
+import { LineChartData } from "../../Data/Data";
 import { LineChartBox } from "../../Components/LineChart/LineChart";
 import TicketBox from "../../Components/Ticket/TicketBox";
 
@@ -16,10 +17,12 @@ export const Dashboard = () => {
   const theme = useTheme();
 
   return (
-    <div>
-      <DashboardTab />
+    <Box display="relative">
+      <Box>
+        <DashboardTab />
+      </Box>
       <Box p="20px" style={{
-        maxHeight: "calc(100vh - 136.39px)", overflowY: "auto", flex: 1, zIndex: -999
+        maxHeight: "calc(100vh)", overflowY: "auto", flex: 1, zIndex: -999
       }}>
 
         {/* GRID & CHARTS */}
@@ -28,6 +31,9 @@ export const Dashboard = () => {
           gridTemplateColumns="repeat(12, 1fr)"
           gridAutoRows="140px"
           gap="20px"
+          marginTop="50px"
+          marginBottom="90px"
+          zIndex="-99999999"
         >
           {/* ROW 1 */}
 
@@ -188,7 +194,7 @@ export const Dashboard = () => {
           {/* Row 3 */}
           <Box
             gridColumn="span 6"
-            gridRow="span 2"
+            gridRow="span 3"
             backgroundColor={theme.palette.custom.white}
             display="flex"
             alignItems="center"
@@ -200,13 +206,13 @@ export const Dashboard = () => {
           </Box>
           <Box
             gridColumn="span 6"
-            gridRow="span 2"
+            gridRow="span 3"
             backgroundColor={theme.palette.custom.white}
             display="flex"
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          ><LineChartBox />
+          ><LineChartBox {...LineChartData} />
           </Box>
 
           {/* Row 4 */}
@@ -228,6 +234,7 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
+            overflowY="auto"
           ><TicketBox />
           </Box>
 
@@ -277,7 +284,7 @@ export const Dashboard = () => {
         </Box>
 
       </Box>
-    </div>
+    </Box >
 
   );
 };
