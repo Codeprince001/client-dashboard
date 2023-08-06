@@ -13,6 +13,7 @@ import { LuWallet } from "react-icons/lu";
 import { BiFolder } from "react-icons/bi";
 import { TbNotes } from "react-icons/tb";
 import { AiOutlinePieChart } from "react-icons/ai";
+import { PiQuestionFill } from "react-icons/pi";
 import userImg from "../Assets/img/user.jpg";
 
 
@@ -134,6 +135,7 @@ export const SidebarData =
 
 export const BarChartData = {
   title: "Earnings",
+  icon: <PiQuestionFill />,
   dataKey: "earnings",
   chartData: [
     {
@@ -170,6 +172,7 @@ export const BarChartData = {
 export const LineChartData = {
   title: "Time Log",
   dataKey: "Hours Logged",
+  icon: <PiQuestionFill />,
   chartData: [
     {
       yData: 40,
@@ -267,5 +270,45 @@ export const TicketHolders = [
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
-  }
+  },
+  {
+    id: 5,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 5,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 5,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 5,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
+  {
+    id: 5,
+    img: userImg,
+    description: "Lorem gratin danie wjnajnd awdbwbf ",
+    name: "Zudd Zenith",
+    date: "05-05-2022",
+    state: "urgent"
+  },
 ];
