@@ -24,8 +24,9 @@ const BarChartBox = (props) => {
 
   return (
     <div className="barChartBox">
-      <div className='title' >
-        <h5>{props.title}</h5>
+      <div className='title' style={{ display: "flex" }}>
+        <h5 style={{ marginRight: "5px" }}>{props.title}</h5>
+        <span>{props.icon}</span>
       </div>
       <div className='chart' >
         <ResponsiveContainer width="99%" height="100%">
