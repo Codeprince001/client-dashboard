@@ -25,8 +25,9 @@ export const LineChartBox = (props) => {
 
   return (
     <div className="lineChartBox">
-      <div className='title' >
-        <h5>Time Log</h5>
+      <div className='title' style={{ display: "flex" }}>
+        <h5 style={{ marginRight: "5px" }}>Time Log</h5>
+        <span>{props.icon}</span>
       </div>
       <div className='linechart'>
         <ResponsiveContainer width="90%" height="100%">
