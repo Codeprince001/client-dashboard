@@ -3,6 +3,7 @@ import { FaUsers, FaUser, FaLayerGroup } from "react-icons/fa";
 import { FaTicketSimple, FaCalendarDays } from "react-icons/fa6";
 import { BiSolidTimeFive } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
+import { MdOutlineCalendarMonth } from "react-icons/md";
 
 import { FaFileLines } from "react-icons/fa6";
 import StatBox from "../../Components/StatBox/StatBox";
@@ -224,7 +225,39 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
+          ><StatBox
+              isData="false"
+              title="Pending Follow Up"
+              icon={
+                <FaUsers
+                  sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
+                />} />
+          </Box>
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+            position="relative"
           >
+            <TicketBox />
+          </Box>
+
+          {/* Row 5 */}
+          <Box
+            gridColumn="span 6"
+            gridRow="span 2"
+            backgroundColor={theme.palette.custom.white}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            borderRadius="10px"
+          ><StatBox
+              title="Pending Task"
+            />
           </Box>
           <Box
             gridColumn="span 6"
@@ -234,11 +267,10 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-            overflowY="auto"
-          ><TicketBox />
+          ><StatBox title="Pending Leaves" isData="false" icon={<MdOutlineCalendarMonth sx={{ color: theme.palette.custom.grey, fontSize: "26px" }} />} />
           </Box>
 
-          {/* Row 5 */}
+          {/* Row 6 */}
           <Box
             gridColumn="span 6"
             gridRow="span 2"
@@ -257,29 +289,13 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          ><StatBox title="Time Logs" />
-          </Box>
-
-          {/* Row 5 */}
-          <Box
-            gridColumn="span 6"
-            gridRow="span 2"
-            backgroundColor={theme.palette.custom.white}
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="10px"
-          ><StatBox title="Earnings" />
-          </Box>
-          <Box
-            gridColumn="span 6"
-            gridRow="span 2"
-            backgroundColor={theme.palette.custom.white}
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="10px"
-          ><StatBox title="Time Logs" />
+          ><StatBox
+              title="User Activity Timeline"
+              isData="false"
+              icon={
+                <FaUsers
+                  sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
+                />} />
           </Box>
         </Box>
 
