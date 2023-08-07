@@ -4,6 +4,7 @@ import { FaTicketSimple, FaCalendarDays } from "react-icons/fa6";
 import { BiSolidTimeFive } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import { PiQuestionFill } from "react-icons/pi";
 
 import { FaFileLines } from "react-icons/fa6";
 import StatBox from "../../Components/StatBox/StatBox";
@@ -243,7 +244,10 @@ export const Dashboard = () => {
             borderRadius="10px"
             position="relative"
           >
-            <TicketBox />
+            <TicketBox icon={
+              <PiQuestionFill
+                sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
+              />} />
           </Box>
 
           {/* Row 5 */}
