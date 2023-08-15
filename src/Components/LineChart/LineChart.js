@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import "./linechart.css";
 import { useTheme } from '@mui/material';
 
@@ -12,10 +12,11 @@ export const LineChartBox = (props) => {
       const data = payload[0].payload;
 
       return (
-        <div style={{ backgroundColor: theme.palette.custom.darkBlue, display: "flex", flexDirection: "column", borderRadius: "10px", padding: ".2rem", fontSize: "12px" }}>
-          <p style={{ margin: "5px", color: theme.palette.custom.grey, borderBottom: `2px solid ${theme.palette.custom.blue}` }}>{`${label}`}</p>
+        <div style={{ backgroundColor: theme.palette.custom.darkBlue, display: "flex", flexDirection: "column", borderRadius: "10px", fontSize: "12px", alignItems: "center" }}>
+          <p style={{ margin: "5px", color: theme.palette.custom.grey, padding: ".2rem" }}>{`${label}`}</p>
+          <p style={{ borderBottom: `2px solid ${theme.palette.custom.blue}`, width: "100%" }}></p>
           <p style={{ color: theme.palette.custom.white, margin: "5px", textAlign: "center" }}>{data.uv}</p>
-          <p style={{ color: theme.palette.custom.grey, textAlign: "center" }}>Hours Logged</p>
+          <p style={{ color: theme.palette.custom.grey, textAlign: "center", padding: ".2rem", }}>Hours Logged</p>
         </div >
       );
     }

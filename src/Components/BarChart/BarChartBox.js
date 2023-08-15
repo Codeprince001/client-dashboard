@@ -1,4 +1,4 @@
-import { BarChart, Bar, Cell, CartesianGrid, Tooltip, Legend, ResponsiveContainer, XAxis, YAxis } from 'recharts';
+import { BarChart, Bar, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import { useTheme } from '@mui/material';
 import "./barchart.css";
 
@@ -11,10 +11,11 @@ const BarChartBox = (props) => {
       const data = payload[0].payload; // Extract the data for the tooltip
 
       return (
-        <div style={{ backgroundColor: theme.palette.custom.darkBlue, display: "flex", flexDirection: "column", borderRadius: "10px", padding: ".2rem", fontSize: "12px" }}>
-          <p style={{ margin: "5px", color: theme.palette.custom.grey, borderBottom: `2px solid ${theme.palette.custom.blue}` }}>{`${label}`}</p>
-          <p style={{ color: theme.palette.custom.white, margin: "5px", textAlign: "center" }}>{data.yData}</p>
-          <p style={{ color: theme.palette.custom.grey, textAlign: "center" }}>Earnings</p>
+        <div style={{ backgroundColor: theme.palette.custom.darkBlue, display: "flex", flexDirection: "column", borderRadius: "10px", fontSize: "12px" }}>
+          <p style={{ margin: "5px", color: theme.palette.custom.grey, padding: ".2rem" }}>{`${label}`}</p>
+          <p style={{ borderBottom: `2px solid ${theme.palette.custom.blue}`, }}></p>
+          <p style={{ color: theme.palette.custom.white, margin: "5px", textAlign: "center", }}>{data.yData}</p>
+          <p style={{ color: theme.palette.custom.grey, textAlign: "center", padding: ".2rem" }}>Earnings</p>
         </div >
       );
     }
