@@ -1,0 +1,55 @@
+.box {
+  width: 100%;
+  height: 100%;
+  overflow: auto
+}
+
+.state-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: -2 2 4 #ccc;
+}
+
+.todo {
+  background-color: #fce518;
+}
+
+.doing {
+  background-color: #0c1db8;
+}
+
+.incomplete {
+  background-color: #fd2525;
+
+}
+
+.project-holder {
+  margin: 10px;
+}
+
+.bottom-border {
+  border-bottom: 2px solid #d9d9d9;
+  width: 100%
+}
+
+.bottom-border:last-child {
+  border-bottom: none;
+}
+
+.project-activity-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-holder-progress {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+}
+
+.project-holder-details {
+  display: flex;
+  flex-direction: column;
+}
