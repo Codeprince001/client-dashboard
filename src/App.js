@@ -6,7 +6,6 @@ import { VerticalSidebar } from './pages/global/Sidebar';
 import { Route, Routes } from 'react-router-dom';
 import { Dashboard } from './pages/Dashboard/dashboardOverview';
 import { Brand } from "./Components/Logo";
-import DashboardTab from './pages/Dashboard/dashboardAdminHeader';
 
 
 function App() {
