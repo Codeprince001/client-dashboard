@@ -14,6 +14,8 @@ import { BarChartData } from "../../Data/Data";
 import { LineChartData } from "../../Data/Data";
 import { LineChartBox } from "../../Components/LineChart/LineChart";
 import TicketBox from "../../Components/Ticket/TicketBox";
+import Tasks from "../../Components/Tasks/Tasks";
+import Projects from "../../Components/Projects/Projects";
 
 export const Dashboard = () => {
   const theme = useTheme();
@@ -259,8 +261,12 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          ><StatBox
+          ><Tasks
               title="Pending Task"
+              icon={
+                <PiQuestionFill
+                  sx={{ color: theme.palette.custom.grey, fontSize: "26px" }}
+                />}
             />
           </Box>
           <Box
@@ -283,7 +289,10 @@ export const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             borderRadius="10px"
-          ><StatBox title="Earnings" />
+          ><Projects
+              title="Project Activity Timeline"
+              icon={<PiQuestionFill />}
+            />
           </Box>
           <Box
             gridColumn="span 6"
