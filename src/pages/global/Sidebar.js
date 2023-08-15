@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./global.css";
 import { SidebarData } from "../../Data/Data";
 
 export const VerticalSidebar = () => {
-  const theme = useTheme();
   const [activeLink, setactiveLink] = useState("Dashboard");
 
   return (
