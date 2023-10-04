@@ -234,7 +234,7 @@ export const TicketHolders = [
   {
     id: 1,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf",
+    description: "Lorem gratin danie wjnajnd awdbwbf jnsajnf wnfjnxnejngf nzkklwnfe f",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -242,7 +242,7 @@ export const TicketHolders = [
   {
     id: 2,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf",
+    description: "Lorem gratin danie wjnajnd awdbwbf awzhmjfe ejfnef jnjknefjnf ejnf",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -250,7 +250,7 @@ export const TicketHolders = [
   {
     id: 3,
     img: userImg,
-    description: "Lorem gratin danie wjnajnd awdbwbf ",
+    description: "Lorem gratin danie wjnajnd awdbwbf we,m,mf kelkfnenfg engegjneg ejgn",
     name: "Zudd Zenith",
     date: "05-05-2022",
     state: "urgent"
@@ -311,4 +311,118 @@ export const TicketHolders = [
     date: "05-05-2022",
     state: "urgent"
   },
+];
+
+
+export const ScheduledTasks = [
+  {
+    id: 1,
+    Dept: "The twelve jurors",
+    task: "Chat Application",
+    date: "05-05-2022",
+    state: "To do",
+    img: userImg,
+
+  },
+  {
+    id: 2,
+    Dept: "The twelve jurors",
+    task: "Server Installation",
+    date: "05-05-2022",
+    state: "Incomplete",
+    img: userImg,
+
+  },
+  {
+    id: 3,
+    Dept: "The twelve jurors",
+    task: "User Management",
+    date: "05-05-2022",
+    state: "To do",
+    img: userImg,
+
+  },
+  {
+    id: 4,
+    Dept: "The twelve jurors",
+    task: "Identification System",
+    date: "05-05-2022",
+    state: "Doing",
+    img: userImg,
+  },
+  {
+    id: 5,
+    Dept: "The twelve jurors",
+    task: "Identification System",
+    date: "05-05-2022",
+    state: "Doing",
+    img: userImg,
+  },
+  {
+    id: 6,
+    Dept: "The twelve jurors",
+    task: "Chat Application",
+    date: "05-05-2022",
+    state: "To do",
+    img: userImg,
+  },
+  {
+    id: 7,
+    Dept: "The twelve jurors",
+    task: "Server Installation",
+    date: "05-05-2022",
+    state: "To do",
+    img: userImg,
+  },
+  {
+    id: 8,
+    Dept: "The twelve jurors",
+    task: "Chat Application",
+    date: "05-05-2022",
+    state: "Incomplete",
+    img: userImg,
+  },
+  {
+    id: 9,
+    Dept: "The twelve jurors",
+    task: "Server Installation",
+    date: "05-05-2022",
+    state: "Doing",
+    img: userImg,
+  },
+];
+
+export const ProjectActivityData = [
+  {
+    id: 1,
+    Dept: "The twelve jurors",
+    task: "Chat Application",
+    date: "05-05-2022",
+    state: "To do",
+    img: userImg,
+  },
+  {
+    id: 2,
+    Dept: "The twelve jurors",
+    task: "Server Installation",
+    date: "05-05-2022",
+    state: "Incomplete",
+    img: userImg,
+  },
+  {
+    id: 3,
+    Dept: "The twelve jurors",
+    task: "User Management",
+    date: "05-05-2022",
+    state: "To do",
+    img: userImg,
+  },
+  {
+    id: 4,
+    Dept: "The twelve jurors",
+    task: "Identification System",
+    date: "05-05-2022",
+    state: "Doing",
+    img: userImg,
+  }
 ];

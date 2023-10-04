@@ -1,5 +1,5 @@
 import { Box, useTheme } from '@mui/material';
-import { ScheduledTasks } from '../../Data/Data';
+import { ScheduledTasks } from "../../Data/Data";
 import "./tasks.css";
 
 const Tasks = ({ icon, title }) => {
