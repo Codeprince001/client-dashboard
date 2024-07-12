@@ -6,7 +6,7 @@ const Tasks = ({ icon, title }) => {
   const theme = useTheme();
 
   return (
-    <Box className="box" style={{cursor: "pointer}}>
+    <Box className="box" style={{cursor: "pointer"}}>
       <Box className="box-container" sx={{ padding: ".5rem", position: 'sticky', top: '0', zIndex: "1", backgroundColor: theme.palette.custom.white, display: "flex", alignItem: "center" }}><div style={{ fontSize: "1rem", fontWeight: "600", marginRight: "5px" }}>{title}</div><span style={{ fontSize: "1.2rem" }}>{icon}</span></Box>
       {
         ScheduledTasks.map((data) => {
