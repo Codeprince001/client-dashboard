@@ -202,27 +202,27 @@ export const DashboardMenuData = () => {
     [
       {
         link: "overview",
-        url: "/",
+        url: "#",
       },
       {
         link: "project",
-        url: "/dashboard/project",
+        url: "#",
       },
       {
         link: "overview",
-        url: "/dashboard/client",
+        url: "#",
       },
       {
         link: "overview",
-        url: "/dashboard/hr",
+        url: "#",
       },
       {
         link: "overview",
-        url: "/dashboard/ticket",
+        url: "#",
       },
       {
         link: "overview",
-        url: "/dashboard/finance",
+        url: "#",
       },
     ]
   );
