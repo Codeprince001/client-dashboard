@@ -28,106 +28,106 @@ export const SidebarData =
       subicon: <BiChevronRight />
     },
     {
-      id: 1,
+      id: 2,
       title: "Leads",
-      url: "/leads",
+      url: "/",
       icon: <BsPerson />
     },
     {
-      id: 1,
+      id: 3,
       title: "Clients",
-      url: "/clients",
+      url: "/",
       icon: <HiMiniBuildingOffice />
     },
     {
-      id: 1,
+      id: 4,
       title: "HR",
-      url: "/hr",
+      url: "/",
       icon: <HiOutlineUsers />,
       subicon: <BiChevronRight />
     },
     {
-      id: 1,
+      id: 5,
       title: "Work",
-      url: "/work",
+      url: "/",
       icon: <PiBriefcaseBold />
     },
     {
-      id: 1,
+      id: 6,
       title: "Finance",
-      url: "/finance",
+      url: "/",
       icon: <BiDollar />
     },
     {
-      id: 1,
+      id: 7,
       title: "Products",
-      url: "/products",
+      url: "/",
       icon: <BsGrid />
     },
     {
-      id: 1,
+      id: 8,
       title: "Orders",
-      url: "/orders",
+      url: "/",
       icon: <CgShoppingCart />
     },
     {
-      id: 1,
+      id: 9,
       title: "Tickets",
-      url: "/tickets",
+      url: "/",
       icon: <IoHeadset />
     },
     {
-      id: 1,
+      id: 10,
       title: "Events",
-      url: "/events",
+      url: "/",
       icon: <LuCalendarDays />
     },
     {
-      id: 1,
+      id: 11,
       title: "Messages",
-      url: "/messages",
+      url: "/",
       icon: <MdOutlineMessage />
     },
     {
-      id: 1,
+      id: 12,
       title: "NoticeBoard",
-      url: "/noticeboard",
+      url: "/",
       icon: <BsClipboard2 />
     },
     {
-      id: 1,
+      id: 13,
       title: "Knowledge Base",
-      url: "/knowledgebase",
+      url: "/",
       icon: <TbNotes />
     },
     {
-      id: 1,
+      id: 14,
       title: "Assets",
-      url: "/assets",
+      url: "/",
       icon: <BiFolder />
     },
     {
-      id: 1,
+      id: 15,
       title: "Payroll",
-      url: "/payroll",
+      url: "/",
       icon: <LuWallet />
     },
     {
-      id: 1,
+      id: 16,
       title: "Zoom",
-      url: "/zoom",
+      url: "/",
       icon: <FiVideo />
     },
     {
-      id: 1,
+      id: 17,
       title: "Reports",
-      url: "/reports",
+      url: "/",
       icon: <AiOutlinePieChart />
     },
     {
-      id: 1,
+      id: 18,
       title: "Settings",
-      url: "/settings",
+      url: "/",
       icon: <FiSettings />
     }
   ];
